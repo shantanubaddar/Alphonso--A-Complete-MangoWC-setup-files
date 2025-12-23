@@ -1,0 +1,43 @@
+# Kesar btop theme
+# Golden yellow with dark green accents
+
+# Main colors
+theme[main_bg]="#1a1a1a"
+theme[main_fg]="#daa520"
+theme[title]="#ffd700"
+theme[hi_fg]="#2f4f2f"
+theme[selected_bg]="#2f4f2f"
+theme[selected_fg]="#ffd700"
+theme[inactive_fg]="#666666"
+theme[graph_text]="#daa520"
+
+# Processes box
+theme[proc_misc]="#ffd700"
+theme[cpu_box]="#ffd700"
+theme[mem_box]="#daa520"
+theme[net_box]="#2f4f2f"
+theme[proc_box]="#6b8e23"
+theme[div_line]="#ffd700"
+
+# CPU graph colors
+theme[cpu_start]="#ffd700"
+theme[cpu_mid]="#daa520"
+theme[cpu_end]="#8b7355"
+
+# Memory graph colors
+theme[mem_start]="#daa520"
+theme[mem_mid]="#ffd700"
+theme[mem_end]="#9acd32"
+
+# Network graph colors
+theme[download_start]="#2f4f2f"
+theme[download_mid]="#556b2f"
+theme[download_end]="#6b8e23"
+theme[upload_start]="#6b8e23"
+theme[upload_mid]="#9acd32"
+theme[upload_end]="#3cb371"
+
+# Process colors
+theme[process_start]="#ffd700"
+theme[process_mid]="#daa520"
+theme[process_end]="#8b7355"

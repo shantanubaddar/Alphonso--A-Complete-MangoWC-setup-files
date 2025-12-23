@@ -1,0 +1,87 @@
+/* Alphonso GTK Theme Override */
+/* Bright yellow with red-orange accents */
+
+@define-color accent_color #f27805;
+@define-color accent_bg_color #f27805;
+@define-color accent_fg_color #ffffff;
+
+@define-color destructive_color #e74c3c;
+@define-color destructive_bg_color #e74c3c;
+@define-color destructive_fg_color #ffffff;
+
+@define-color success_color #f2e205;
+@define-color success_bg_color #f2e205;
+@define-color success_fg_color #1a1a1a;
+
+@define-color warning_color #ffa500;
+@define-color warning_bg_color #ffa500;
+@define-color warning_fg_color #1a1a1a;
+
+@define-color error_color #e74c3c;
+@define-color error_bg_color #e74c3c;
+@define-color error_fg_color #ffffff;
+
+@define-color window_bg_color #1a1a1a;
+@define-color window_fg_color #f2e205;
+
+@define-color view_bg_color #2a2a2a;
+@define-color view_fg_color #f2e205;
+
+@define-color headerbar_bg_color #1a1a1a;
+@define-color headerbar_fg_color #f2e205;
+@define-color headerbar_border_color #f27805;
+@define-color headerbar_backdrop_color #151515;
+@define-color headerbar_shade_color rgba(0, 0, 0, 0.36);
+
+@define-color card_bg_color #2a2a2a;
+@define-color card_fg_color #f2e205;
+@define-color card_shade_color rgba(0, 0, 0, 0.36);
+
+@define-color dialog_bg_color #2a2a2a;
+@define-color dialog_fg_color #f2e205;
+
+@define-color popover_bg_color #2a2a2a;
+@define-color popover_fg_color #f2e205;
+
+@define-color shade_color rgba(0, 0, 0, 0.36);
+@define-color scrollbar_outline_color rgba(0, 0, 0, 0.5);
+
+/* Selection colors */
+*:selected {
+    background-color: #f27805;
+    color: #ffffff;
+}
+
+/* Links */
+link {
+    color: #ffa500;
+}
+
+link:visited {
+    color: #ff8c42;
+}
+
+/* Buttons */
+button {
+    background-color: #f27805;
+    color: #ffffff;
+}
+
+button:hover {
+    background-color: #ffa500;
+}
+
+button:active {
+    background-color: #e0b01f;
+}
+
+/* Entry fields */
+entry {
+    background-color: #2a2a2a;
+    color: #f2e205;
+    border-color: #f27805;
+}
+
+entry:focus {
+    border-color: #ffa500;
+}

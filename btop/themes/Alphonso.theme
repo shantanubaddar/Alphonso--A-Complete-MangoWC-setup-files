@@ -1,0 +1,43 @@
+# Alphonso btop theme
+# Bright yellow with red-orange accents
+
+# Main colors
+theme[main_bg]="#1a1a1a"
+theme[main_fg]="#f2e205"
+theme[title]="#f27805"
+theme[hi_fg]="#ffa500"
+theme[selected_bg]="#f27805"
+theme[selected_fg]="#ffffff"
+theme[inactive_fg]="#666666"
+theme[graph_text]="#f2e205"
+
+# Processes box
+theme[proc_misc]="#f27805"
+theme[cpu_box]="#f27805"
+theme[mem_box]="#e0b01f"
+theme[net_box]="#ff6b35"
+theme[proc_box]="#f39c12"
+theme[div_line]="#f27805"
+
+# CPU graph colors
+theme[cpu_start]="#f27805"
+theme[cpu_mid]="#f2e205"
+theme[cpu_end]="#ffa500"
+
+# Memory graph colors
+theme[mem_start]="#e0b01f"
+theme[mem_mid]="#f2e205"
+theme[mem_end]="#ffa500"
+
+# Network graph colors
+theme[download_start]="#ff6b35"
+theme[download_mid]="#f27805"
+theme[download_end]="#e74c3c"
+theme[upload_start]="#f39c12"
+theme[upload_mid]="#ffa500"
+theme[upload_end]="#f2e205"
+
+# Process colors
+theme[process_start]="#f27805"
+theme[process_mid]="#f2e205"
+theme[process_end]="#ffa500"

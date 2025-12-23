@@ -1,0 +1,87 @@
+/* Kesar GTK Theme Override */
+/* Golden yellow with dark green accents */
+
+@define-color accent_color #ffd700;
+@define-color accent_bg_color #ffd700;
+@define-color accent_fg_color #1a1a1a;
+
+@define-color destructive_color #8b4513;
+@define-color destructive_bg_color #8b4513;
+@define-color destructive_fg_color #ffffff;
+
+@define-color success_color #3cb371;
+@define-color success_bg_color #3cb371;
+@define-color success_fg_color #ffffff;
+
+@define-color warning_color #daa520;
+@define-color warning_bg_color #daa520;
+@define-color warning_fg_color #1a1a1a;
+
+@define-color error_color #8b4513;
+@define-color error_bg_color #8b4513;
+@define-color error_fg_color #ffffff;
+
+@define-color window_bg_color #1a1a1a;
+@define-color window_fg_color #daa520;
+
+@define-color view_bg_color #2a2a2a;
+@define-color view_fg_color #daa520;
+
+@define-color headerbar_bg_color #1a1a1a;
+@define-color headerbar_fg_color #daa520;
+@define-color headerbar_border_color #ffd700;
+@define-color headerbar_backdrop_color #151515;
+@define-color headerbar_shade_color rgba(0, 0, 0, 0.36);
+
+@define-color card_bg_color #2a2a2a;
+@define-color card_fg_color #daa520;
+@define-color card_shade_color rgba(0, 0, 0, 0.36);
+
+@define-color dialog_bg_color #2a2a2a;
+@define-color dialog_fg_color #daa520;
+
+@define-color popover_bg_color #2a2a2a;
+@define-color popover_fg_color #daa520;
+
+@define-color shade_color rgba(0, 0, 0, 0.36);
+@define-color scrollbar_outline_color rgba(0, 0, 0, 0.5);
+
+/* Selection colors */
+*:selected {
+    background-color: #2f4f2f;
+    color: #ffd700;
+}
+
+/* Links */
+link {
+    color: #9acd32;
+}
+
+link:visited {
+    color: #6b8e23;
+}
+
+/* Buttons */
+button {
+    background-color: #2f4f2f;
+    color: #ffd700;
+}
+
+button:hover {
+    background-color: #556b2f;
+}
+
+button:active {
+    background-color: #6b8e23;
+}
+
+/* Entry fields */
+entry {
+    background-color: #2a2a2a;
+    color: #daa520;
+    border-color: #2f4f2f;
+}
+
+entry:focus {
+    border-color: #ffd700;
+}

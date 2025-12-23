@@ -1,0 +1,43 @@
+# Palmer btop theme
+# Crimson red with bright yellow accents
+
+# Main colors
+theme[main_bg]="#0f0f0f"
+theme[main_fg]="#ffd700"
+theme[title]="#dc143c"
+theme[hi_fg]="#ffff00"
+theme[selected_bg]="#dc143c"
+theme[selected_fg]="#ffd700"
+theme[inactive_fg]="#666666"
+theme[graph_text]="#ffd700"
+
+# Processes box
+theme[proc_misc]="#dc143c"
+theme[cpu_box]="#dc143c"
+theme[mem_box]="#ffd700"
+theme[net_box]="#ff6347"
+theme[proc_box]="#ff4500"
+theme[div_line]="#dc143c"
+
+# CPU graph colors
+theme[cpu_start]="#dc143c"
+theme[cpu_mid]="#ff6b6b"
+theme[cpu_end]="#b22222"
+
+# Memory graph colors
+theme[mem_start]="#ffd700"
+theme[mem_mid]="#ffff00"
+theme[mem_end]="#ffa500"
+
+# Network graph colors
+theme[download_start]="#ff6347"
+theme[download_mid]="#ff7f50"
+theme[download_end]="#ff4500"
+theme[upload_start]="#ffa500"
+theme[upload_mid]="#ffd700"
+theme[upload_end]="#ffff00"
+
+# Process colors
+theme[process_start]="#dc143c"
+theme[process_mid]="#ff6b6b"
+theme[process_end]="#cd5c5c"

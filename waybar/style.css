@@ -1,0 +1,151 @@
+* {
+    all: unset;
+}
+
+window>box {
+    font-family: StretchPro;
+    margin: 12px 0px 12px 0px;
+    background-color: #e0b01f;
+    border-radius: 8px;
+}
+
+/* Tags - Elevator floors */
+#tags {
+    padding: 15px 0px 0px 0px;
+    margin: 0px;
+    background-color: rgba(0,0,0, 0);
+}
+
+#tags button {
+    padding: 8px 0;
+    margin: 3px 0;
+    color: rgba(255, 255, 255, 0.3); /* default grey */
+    transition: color 0.15s ease, background 0.15s ease, padding 0.15s ease;
+
+    font-size: 12px;
+    min-width: 35px; /* Ensure buttons have width */
+}
+#tags button:hover {
+    color: rgba(255, 255, 255, 0.7);
+    background: transparent; /* remove hover grey */
+    border-radius: 0;
+}
+
+
+/* Active/focused tag - bright golden yellow with background */
+
+/* Urgent tag - blinking muted yellow with background */
+@keyframes blink-urgent {
+    0% { 
+        color: #FFD580; 
+        background: rgba(255, 213, 128, 0.2);
+    }
+    25% { 
+        color: rgba(255, 213, 128, 0.3); 
+        background: rgba(255, 213, 128, 0.05);
+    }
+    50% { 
+        color: #FFD580; 
+        background: rgba(255, 213, 128, 0.2);
+    }
+    75% { 
+        color: rgba(255, 213, 128, 0.3); 
+        background: rgba(255, 213, 128, 0.05);
+    }
+    100% { 
+        color: #FFD580; 
+        background: rgba(255, 213, 128, 0.2);
+    }
+}
+
+#tags button.urgent {
+    animation: blink-urgent 1s step-start infinite;
+    border-radius: 4px;
+}
+
+/* Occupied tag (has windows but not focused) - with subtle background */
+#tags button.occupied {
+    color: rgba(224, 76, 31, 0.45); /* dull yellow */
+    background: transparent;       /* remove grey box */
+    border-radius: 0;              /* ensure no rounded box */
+}
+
+#tags button.focused {
+    font-family: 'StretchPro';
+    font-size: 18px;
+    font-weight: bold;
+    color: rgba(245, 65, 10, 0.80); /* bright gold */
+}
+
+
+/* Empty tag */
+#tags button:not(.occupied):not(.focused) {
+    color: rgba(255, 255, 255, 0.15);
+    background: transparent;
+    border-radius: 0;
+}
+
+
+/* Clock - Elevator display */
+#clock {
+    font-family: StretchPro;
+    color: rgba(224, 76, 31);
+    padding: 15px 10px;
+    margin: 0px;
+    background: rgba(0,0,0,0);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* Tray icons at bottom */
+#custom-updates,
+#battery,
+#pulseaudio,
+#network,
+#bluetooth,
+#custom-hypridle,
+#custom-brightness,
+#cpu {
+    padding: 8px 0;
+    margin: 3px 0;
+    color: rgba(224, 76, 31);
+    font-size: 12px;
+}
+
+/* Hover effects */
+#clock:hover,
+#custom-updates:hover,
+#custom-hypridle:hover,
+#custom-brightness:hover,
+#battery:hover,
+#network:hover,
+#bluetooth:hover,
+#cpu:hover,
+#pulseaudio:hover {
+    background: rgba(255, 76, 76, 0.1);
+    border-radius: 4px;
+}
+
+/* Battery states */
+#battery.warning {
+    color: rgb(255, 200, 100);
+}
+
+#battery.critical {
+    color: rgb(255, 100, 100);
+}
+
+/* Hypridle not active */
+#custom-hypridle.notactive {
+    color: rgb(224, 137, 137);
+}
+
+/* Tooltip */
+tooltip {
+    background: #2a292d;
+    color: #ff4c4c;
+    font-size: 11px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 76, 76, 0.3);
+    padding: 8px 12px;
+}

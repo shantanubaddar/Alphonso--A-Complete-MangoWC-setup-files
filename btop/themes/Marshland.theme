@@ -1,0 +1,43 @@
+# Marshland btop theme
+# Dark olive green with bright light green accents
+
+# Main colors
+theme[main_bg]="#1a1f1a"
+theme[main_fg]="#9acd32"
+theme[title]="#7cfc00"
+theme[hi_fg]="#adff2f"
+theme[selected_bg]="#556b2f"
+theme[selected_fg]="#ffffff"
+theme[inactive_fg]="#4a5a4a"
+theme[graph_text]="#9acd32"
+
+# Processes box
+theme[proc_misc]="#7cfc00"
+theme[cpu_box]="#7cfc00"
+theme[mem_box]="#9acd32"
+theme[net_box]="#556b2f"
+theme[proc_box]="#3cb371"
+theme[div_line]="#7cfc00"
+
+# CPU graph colors
+theme[cpu_start]="#7cfc00"
+theme[cpu_mid]="#9acd32"
+theme[cpu_end]="#556b2f"
+
+# Memory graph colors
+theme[mem_start]="#9acd32"
+theme[mem_mid]="#adff2f"
+theme[mem_end]="#7cfc00"
+
+# Network graph colors
+theme[download_start]="#556b2f"
+theme[download_mid]="#6b8e23"
+theme[download_end]="#3cb371"
+theme[upload_start]="#3cb371"
+theme[upload_mid]="#90ee90"
+theme[upload_end]="#00ff7f"
+
+# Process colors
+theme[process_start]="#7cfc00"
+theme[process_mid]="#9acd32"
+theme[process_end]="#adff2f"

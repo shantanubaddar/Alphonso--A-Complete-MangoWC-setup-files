@@ -1,0 +1,109 @@
+[
+    {
+        "name": "sidebar",
+        "layer": "top",
+        "position": "left",
+        "modules-left": ["dwl/tags"],
+        "modules-center": ["clock"],
+        "modules-right": [
+            "tray",
+            "custom/updates",
+            "battery",
+            "pulseaudio",
+            "network",
+            "bluetooth",
+            "custom/hypridle",
+            "custom/brightness",
+            "cpu"
+        ],
+        "dwl/tags": {
+            "num-tags": 5
+        },
+        "tray": {
+            "icon-size": 16,
+            "spacing": 8
+        },
+        "clock": {
+            "format": "{:%a\n%H\n%M}",
+            "format-alt": "{:%d\n%b\n%Y}",
+            "tooltip-format": "<big>{:%A, %B %d, %Y}</big>\n<tt><small>{calendar}</small></tt>",
+            "interval": 60
+        },
+        "custom/updates": {
+            "format": "{}",
+            "escape": true,
+            "return-type": "json",
+            "exec": "update-check",
+            "interval": 1800,
+            "signal": 1,
+            "on-click": "ghostty --class=local.floating -e update-perform"
+        },
+        "custom/hypridle": {
+            "format": "󰒲",
+            "return-type": "json",
+            "escape": true,
+            "exec-on-event": true,
+            "interval": 60,
+            "exec": "hypridle-toggle status",
+            "on-click": "hypridle-toggle toggle"
+        },
+        "cpu": {
+            "interval": 5,
+            "format": "󰍛",
+            "on-click": "ghostty -e btop"
+        },
+        "pulseaudio": {
+            "scroll-step": 1,
+            "format": "{icon}",
+            "on-click": "ghostty --class=local.wiremix -e wiremix",
+            "on-click-right": "pamixer -t",
+            "tooltip-format": "{volume}%",
+            "format-muted": "󰝟",
+            "format-icons": {
+                "default": ["󰕿", "󰖀", "󰕾"]
+            }
+        },
+        "network": {
+            "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
+            "format": "{icon}",
+            "format-wifi": "{icon}",
+            "format-ethernet": "󰀂",
+            "format-disconnected": "󰤮",
+            "tooltip-format-wifi": "{essid} ({frequency} GHz)\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
+            "tooltip-format-ethernet": "⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
+            "tooltip-format-disconnected": "Disconnected",
+            "interval": 3,
+            "on-click": "ghostty --class=local.floating -e impala"
+        },
+        "battery": {
+            "format": "{icon}",
+            "format-discharging": "{icon}",
+            "format-charging": "{icon}",
+            "format-plugged": "󰂄",
+            "format-icons": {
+                "charging": ["󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"],
+                "default": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+            },
+            "format-full": "󰂅",
+            "tooltip-format-discharging": "{power:>1.0f}W↓ {capacity}%\n{timeTo}",
+            "tooltip-format-charging": "{power:>1.0f}W↑ {capacity}%\n{timeTo}",
+            "interval": 5,
+            "on-click": "walker -t menus -m menus:power-profiles -N -n",
+            "states": {
+                "warning": 20,
+                "critical": 10
+            }
+        },
+        "bluetooth": {
+            "format": "󰂯",
+            "format-disabled": "󰂲",
+            "format-connected": "󰂱",
+            "tooltip-format": "{num_connections} connected",
+            "on-click": "ghostty --class=local.bluetui -e bluetui"
+        },
+        "custom/brightness": {
+            "format": "󰃞",
+            "on-click": "walker -t menus -m menus:brightness --maxheight 350 --minwidth 50 -N"
+        }
+    }
+]

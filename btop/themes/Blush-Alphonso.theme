@@ -1,0 +1,43 @@
+# Blush-Alphonso btop theme
+# Pink with dark red/orange accents
+
+# Main colors
+theme[main_bg]="#1a1a1a"
+theme[main_fg]="#ffb3d9"
+theme[title]="#ff69b4"
+theme[hi_fg]="#ff1493"
+theme[selected_bg]="#ff69b4"
+theme[selected_fg]="#ffffff"
+theme[inactive_fg]="#666666"
+theme[graph_text]="#ffb3d9"
+
+# Processes box
+theme[proc_misc]="#ff69b4"
+theme[cpu_box]="#ff69b4"
+theme[mem_box]="#ff91af"
+theme[net_box]="#c71585"
+theme[proc_box]="#ff6b9d"
+theme[div_line]="#ff69b4"
+
+# CPU graph colors
+theme[cpu_start]="#ff69b4"
+theme[cpu_mid]="#ffb3d9"
+theme[cpu_end]="#ff1493"
+
+# Memory graph colors
+theme[mem_start]="#ff91af"
+theme[mem_mid]="#ffb3d9"
+theme[mem_end]="#ff69b4"
+
+# Network graph colors
+theme[download_start]="#c71585"
+theme[download_mid]="#ff69b4"
+theme[download_end]="#dc143c"
+theme[upload_start]="#ff6b9d"
+theme[upload_mid]="#ff91af"
+theme[upload_end]="#ffc0cb"
+
+# Process colors
+theme[process_start]="#ff69b4"
+theme[process_mid]="#ffb3d9"
+theme[process_end]="#ff1493"
